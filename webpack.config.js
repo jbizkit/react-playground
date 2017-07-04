@@ -48,19 +48,7 @@ const config = {
     devServer: {
         contentBase: [
             path.resolve(__dirname, 'dev'), // Mock data and dev pages
-        ],
-        proxy: {
-            '/experiences': {
-                target: 'http://localhost:8080/',
-                pathRewrite: (path, req) => '/expr.phone.html',
-            },
-            '/api': {
-                target: 'https://localhost/',
-                secure: false,
-                changeOrigin: true,
-            }
-        }
-
+        ]
     }
 };
 
