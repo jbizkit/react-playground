@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 const config = {
     entry: {
@@ -25,13 +26,21 @@ const config = {
                     }
                 ],
                 exclude: '/node_modules/'
+            },
+            {
+                test: /\.s?css$/,
+                loader: ExtractTextPlugin.extract({
+                    fallback: 'style-loader', // backup loader when not building .css file
+                    use: ['css-loader', 'postcss-loader', 'sass-loader'] // loaders to preprocess CSS
+                })
             }
         ]
     },
     plugins: [
+        new ExtractTextPlugin('[name].css'),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': JSON.stringify('dev') 
+                'NODE_ENV': JSON.stringify('dev')
             }
         })
     ],
