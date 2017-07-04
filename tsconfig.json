@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es5",
+    "jsx": "react",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/common/declarations"
+    ]
+  },
+  "files": [ "node_modules/typescript/lib/typescriptServices.d.ts" ],
+  "exclude": [
+    "/node_modules/",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.test.mocha.ts",
+    "**/*.test.mocha.tsx"
+  ]

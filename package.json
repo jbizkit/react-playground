@@ -6,14 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jonahbgoode/react-playground.git"
-  },
+  "repository": "git+https://github.com/jonahbgoode/react-playground.git",
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jonahbgoode/react-playground/issues"
   },
-  "homepage": "https://github.com/jonahbgoode/react-playground#readme"
+  "homepage": "https://github.com/jonahbgoode/react-playground#readme",
+  "dependencies": {
+    "react": "^15.6.1"
+  }
 }
