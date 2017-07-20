@@ -1377,6 +1377,12 @@ extsprintf@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.0.2.tgz#e1080e0658e300b06294990cc70e1502235fd550"
 
+fade-props@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/fade-props/-/fade-props-1.0.0.tgz#112a1b511ec09ca4a619796b9f22b3432ddcdb74"
+  dependencies:
+    react "^15.0.1"
+
 fast-deep-equal@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/fast-deep-equal/-/fast-deep-equal-0.1.0.tgz#5c6f4599aba6b333ee3342e2ed978672f1001f8d"
@@ -3225,6 +3231,19 @@ react-addons-css-transition-group@^15.6.0:
   dependencies:
     react-transition-group "^1.2.0"
 
+"react-addons-transition-group@^0.14.0 || ^15.0":
+  version "15.6.0"
+  resolved "https://registry.yarnpkg.com/react-addons-transition-group/-/react-addons-transition-group-15.6.0.tgz#0f220b9f9597db3a80a88dbd6fe805fc644ce21c"
+  dependencies:
+    react-transition-group "^1.2.0"
+
+react-css-transition-replace@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/react-css-transition-replace/-/react-css-transition-replace-2.2.1.tgz#e74eb2d1f4beaff31bf260767333e60ff3fe0d32"
+  dependencies:
+    prop-types "^15.5.6"
+    react-transition-group "^1.1.1"
+
 react-dom@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-15.6.1.tgz#2cb0ed4191038e53c209eb3a79a23e2a4cf99470"
@@ -3234,7 +3253,14 @@ react-dom@^15.6.1:
     object-assign "^4.1.0"
     prop-types "^15.5.10"
 
-react-transition-group@^1.2.0:
+react-easy-transition@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/react-easy-transition/-/react-easy-transition-1.2.4.tgz#4d7aa3e35a07e82e34b2d20508e4983e4233735e"
+  dependencies:
+    react "^0.14.0 || ^15.0"
+    react-addons-transition-group "^0.14.0 || ^15.0"
+
+react-transition-group@^1.1.1, react-transition-group@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-1.2.0.tgz#b51fc921b0c3835a7ef7c571c79fc82c73e9204f"
   dependencies:
@@ -3244,7 +3270,7 @@ react-transition-group@^1.2.0:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react@^15.6.1:
+"react@^0.14.0 || ^15.0", react@^15.0.1, react@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:

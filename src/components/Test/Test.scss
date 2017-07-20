@@ -1,8 +1,95 @@
 .mainDiv {
     background-color: olivedrab;
-    text-align: center;
     width: 100px;
-    max-height: 85px;
-    min-height: 85px;
-    overflow-y: hidden;
+    height: 120px;
+    display: table;
 }
+
+.childMainDiv{ 
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+
+.fade-wait {
+  display: inline-block;
+  vertical-align: center;
+}
+
+
+
+
+
+.fade-wait-leave {
+  opacity: 1;
+}
+.fade-wait-leave.fade-wait-leave-active {
+  opacity: 0;
+  transition: opacity .2s ease-in;
+}
+
+.fade-wait-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity .4s ease-in .6s;
+}
+
+.fade-wait-height {
+  transition: height .5s ease-in-out;
+}
+
+.App {
+    background-color: olivedrab;
+    width: 100px;
+    height: 120px;
+    display: table;
+}
+
+.child {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.child1 {
+    text-align: center;
+}
+
+/***************************************/
+.wizer {
+  animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+
+.wizer-fo {
+  animation: fadeout 2s;
+    -moz-animation: fadeout 2s; /* Firefox */
+    -webkit-animation: fadeout 2s; /* Safari and Chrome */
+    -o-animation: fadeout 2s; /* Opera */
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+
+
+

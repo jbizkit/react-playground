@@ -1,17 +1,25 @@
-.example-enter {
-  opacity: 0.01;
+.fade-wait {
+  display: inline-block;
+  vertical-align: center;
 }
 
-.example-enter.example-enter-active {
-  opacity: 1;
-  transition: opacity 400ms;
-}
-
-.example-leave {
+.fade-wait-leave {
   opacity: 1;
 }
+.fade-wait-leave.fade-wait-leave-active {
+  opacity: 0;
+  transition: opacity .2s ease-in;
+}
 
-.example-leave.example-leave-active {
-  opacity: 0.01;
-  transition: opacity 0ms ease-in-out;
+.fade-wait-enter {
+  opacity: 0;
+}
+.fade-wait-enter.fade-wait-enter-active {
+  opacity: 1;
+  /* Delay the enter animation until the leave completes */
+  transition: opacity .4s ease-in .6s;
+}
+
+.fade-wait-height {
+  transition: height .5s ease-in-out;
 }
