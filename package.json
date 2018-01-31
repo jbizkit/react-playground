@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/react-bootstrap": "^0.0.52",
     "fade-props": "^1.0.0",
+    "nuka-carousel": "^3.0.1",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
     "react-bootstrap": "^0.31.1",
