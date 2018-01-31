@@ -1,3 +1,4 @@
+/// <reference path="../../declarations/nuka-carousel/index.d.ts" />
 import * as React from 'react';
 import * as Carousel from 'nuka-carousel';
 
