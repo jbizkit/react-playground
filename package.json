@@ -19,10 +19,7 @@
     "nuka-carousel": "^3.0.1",
     "react": "^15.6.1",
     "react-addons-css-transition-group": "^15.6.0",
-    "react-bootstrap": "^0.31.1",
-    "react-css-transition-replace": "^2.2.1",
-    "react-dom": "^15.6.1",
-    "react-easy-transition": "^1.2.4"
+    "react-dom": "^15.6.1"
   },
   "devDependencies": {
     "@types/react": "^15.0.34",

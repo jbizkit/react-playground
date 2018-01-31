@@ -7,9 +7,8 @@ interface State { }
 export class Nuka extends React.Component<Props, State> {
     constructor(props) {
         super(props);
-
     }
-
+    
     render() {
         return (
             <Carousel>
