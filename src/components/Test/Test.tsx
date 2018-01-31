@@ -5,7 +5,7 @@ interface Props { }
 interface State { }
 
 export class Test extends React.Component<Props, State> {
-    constructor(props) {
+    constructor(props: Props) {
         super(props);
     }
 

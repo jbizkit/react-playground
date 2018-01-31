@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Carousel from 'nuka-carousel';
+import * as Carousel from 'nuka-carousel';
 
 interface Props { }
 interface State { }
 
 export class Nuka extends React.Component<Props, State> {
-    constructor(props) {
+    constructor(props: Props) {
         super(props);
     }
     
