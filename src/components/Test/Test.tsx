@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Nuka } from './Nuka'
+import { Bar } from './Bar'
 
 interface Props { }
 interface State { }
@@ -11,7 +11,7 @@ export class Test extends React.Component<Props, State> {
 
     render() {
         return (
-            <Nuka />
+            <Bar />
         );
     }
 }

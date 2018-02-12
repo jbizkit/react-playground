@@ -3,6 +3,9 @@ declare module 'nuka-carousel' {
 
     namespace Carousel {
         interface Props {
+            slidesToShow?: string;
+            dragging?: boolean;
+            swiping?: boolean;
         }
     }
 

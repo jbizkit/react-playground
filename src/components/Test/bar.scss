@@ -1,0 +1,19 @@
+.timebar__core {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+    height: 16px;
+    border: 1px solid #c2c2c2;
+    background: #ededed;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.timebar__bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: #0ab21b;
+}
