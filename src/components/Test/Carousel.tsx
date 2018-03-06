@@ -26,7 +26,8 @@ export class Carousel extends React.Component<Props, State> {
         const _ = document.getElementById(`carousel-item-${i}`).getBoundingClientRect();
         let a = n / 2 - r / 2 - (_ ? _.left : 0);
         a > 0 ? a = 0 : n - o + 10 > a && (a = n - o + 10);
-        this.setState({ left: a });
+        const finalValue = (a >= 0) ? a : (a - 10);
+        this.setState({ left: finalValue });
     }
 
     render() {
