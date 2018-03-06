@@ -1,0 +1,19 @@
+.carousel {
+    width: 900px;
+    height: 100px;
+    border: 1px solid red;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+
+    &-container {
+        position: absolute;
+        transition: left .3s ease-in-out
+    }
+
+    &-item {
+        display: inline-block;
+        width: 100px;
+        border: 1px solid black;
+    }
+}
