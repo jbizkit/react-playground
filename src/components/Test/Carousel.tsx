@@ -30,6 +30,9 @@ export class Carousel extends React.Component<Props, State> {
         a > 0 ? a = 0 : n - o + 10 > a && (a = n - o + 10);
         const finalValue = (a >= 0) ? a : (a - 10);
         this.setState({ left: finalValue, active: i });
+
+//         var n = this.$thumbsViewport.width(), o = this.$thumbsContainer.width(), r = i.width(), _ = i.position(), a = n / 2 - r / 2 - (_ ? this.isRtl ? o - _.left - r - 10 :_.left :0);
+// a > 0 ? a = 0 :n - o + 10 > a && (a = n - o + 10), this.$thumbsContainer.css(this.isRtl ? "right" :"left", a), _r_();
     }
 
     render() {
