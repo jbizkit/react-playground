@@ -1,17 +1,18 @@
 const webpack = require('webpack');
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const { GenerateSW } = require('workbox-webpack-plugin');
 
 const config = {
     entry: {
         'entry': './entry.ts'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist/'),
         filename: '[name].js',
         library: 'ReactPlayground',
         libraryTarget: "this",
-        publicPath: 'dist'
+        publicPath: '/dist/'
     },
     resolve: {
         extensions: ['.js', '.jsx', '.d.ts', '.ts', '.tsx']
@@ -42,6 +43,12 @@ const config = {
             'process.env': {
                 'NODE_ENV': JSON.stringify('dev')
             }
+        }),
+        new GenerateSW({
+            include: [/\.js$/, /\.css$/, /\.html$/],
+            swDest: 'sw.js',
+            clientsClaim: true,
+            skipWaiting: true,
         })
     ],
     devtool: 'inline-source-map',

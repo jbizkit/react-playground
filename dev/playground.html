@@ -11,6 +11,13 @@
 <body>
     <div id="test-root"></div>
     <script src="dist/entry.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('dist/sw.js');
+            });
+        }
+    </script>
 </body>
 
 </html>
